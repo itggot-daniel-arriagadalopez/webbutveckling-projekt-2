@@ -96,6 +96,16 @@ nav{
 .text_0{
     grid-area: text_0;
     height: 20px;
+
+    color: #fffe22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+
+    margin-top: 40px;
 }
 
 .text_1{
@@ -108,11 +118,15 @@ nav{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2rem;
     
+    /* margin-left: 10px; */
 }
 
 .text_2{
     grid-area: text_2;
     color: #fffe22;
+
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 /* Desktops and laptops ----------- */
@@ -225,6 +239,10 @@ nav{
     .menu.clicked{
         right: 0;
         top: 0;
+    }
+
+    .click{
+        visibility: visible;
     }
 
     ul{
