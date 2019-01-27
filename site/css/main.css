@@ -1,0 +1,236 @@
+body{
+    margin: 0;
+    background-color: #0579cc;
+}
+
+header{
+    background-color: #ff2320;
+    height: 150px;
+    width: 100vw;
+
+    background-image: url(../img/Hot\ weehls.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav{
+    height: 40px;
+    background: linear-gradient(to bottom, #ff2320 0%, #ff2320 50%, #0579cc 50%, #0579cc 100% );
+    /* background-color: rgba(0, 0, 0, 0.3); */
+
+    margin: -2px;
+    padding: 20px 0;
+    position: sticky;
+    top: 0px; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    /* För att man ska kunna scrolla i prototypen: */
+    height: 150vh;
+
+
+    display: grid;
+    grid-template-rows: 150px 40px auto;
+}
+
+.navbox{
+    background-color: #fffe22;
+
+    height: 40px;
+    width: 130px;
+    /* margin: 10px; */
+    /* border-radius: 3px; */
+    margin-right: 20px;
+    margin-left: 20px;
+
+    /* transform: translateY(50%); */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.hamburger{
+    visibility: hidden;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+.click{
+    visibility: hidden;
+}
+.about{
+    display: grid;
+    grid-template-areas: 
+    "text_0 text_0"
+    "text_1 bild"
+    "text_2 text_2";
+
+    height: 90vh;
+    width: 90vw; 
+
+    background-color: #ff2320;
+
+    margin: 20px; 
+    /* margin-right: px; */
+    margin-left: 20px; 
+
+   
+}
+
+.text_0{
+    grid-area: text_0;
+    height: 20px;
+}
+
+.text_1{
+    grid-area: text_1;
+    color: #fffe22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.text_2{
+    grid-area: text_2;
+    color: #fffe22;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    
+    .about{
+        display: grid;
+        grid-template-areas: 
+        "text_0 text_0"
+        "text_1 bild"
+        "text_2 text_2";
+    
+        height: 100vh;
+        width: 90vw; 
+    
+        background-color: #ff2320;
+    
+        margin: 20px; 
+        margin-right: 100px;
+        margin-left: 20px; 
+    
+       
+    }
+    
+    .profil_bild{
+        margin-left: 300px;
+        margin-top: 100px;
+    }
+
+    .text_0{
+        grid-area: text_0;
+
+        margin-top: 50px;
+        height: 70px;
+        color: #fffe22; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 5rem;
+        
+    }
+    
+    .text_1{
+        grid-area: text_1;
+        color: #fffe22; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3rem;
+
+        margin-top: 50px;
+        margin-left: 20px;
+        
+    }
+    
+    .text_2{
+        grid-area: text_2;
+        color: #fffe22;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2rem;
+
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    
+
+    .navbox{
+        visibility: hidden;
+        
+    }
+    
+    .menu{
+        visibility: visible;
+
+        background-color: #ff2320;
+
+        transition: 0.40s;
+
+        height: 100vh;
+        width: 25vw;
+
+        position: absolute;
+        right: -100%;
+        top: -100%; 
+
+        /* margin-top: 40px; */
+
+        color: #fffe22;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2rem;
+
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .menu.clicked{
+        right: 0;
+        top: 0;
+    }
+
+    ul{
+        list-style-image: url(/site/img/list.png);
+    }
+
+
+
+    }
